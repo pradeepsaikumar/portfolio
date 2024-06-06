@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>portfolio website</title>
+        <link rel="stylesheet" href="port.css">
+        <script src="https://kit.fontawesome.com/dd9099fdc0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+              <nav>
+                <img src="D:\java program\folio\logo1.jpg" class="logo">
+                <ul>
+                    <li><a href="portf.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+               </nav>
+               <div class="header-text">
+                <p>Devops Engineer</p>
+                <h1>Hi,I'm <span>Pradeep sai kumar</span><br> From Jrg</h1>
+               </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                      <img src="C:\Users\prade\OneDrive\Pictures\portf.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am PRADEEP SAI KUMAR From Jangareddygudem currently<br> i'am pursuing B.tech 4th year in BITS VIZAG</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Devops</span><br>Engineer</li>
+                                <li><span>Full stack</span><br>front end and backend</li>
+                                <li><span>java developer</span><br>Implementing and testing code</li>
+                                <li><span>web development</span><br>web app development</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024-current</span><br>Internship at loma IT solutions</li>
+                                <li><span>2023-2023</span><br>Internship at Internpe</li>
+                                <li><span>2023</span><br>Internship at Brain o Visions</li>
+                                <li><span>2021-2023</span><br>Student in BITS VIZAG</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-2025</span><br>BTECH pursuing</li>
+                                <li><span>2019-2021</span><br>INTERMEDIATE from vidya vikas Jrg</li>
+                                <li><span>2018-2019</span><br>SSC 10th from prathibha english medium school Jrg</li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+        </body>
+</html>
+        
